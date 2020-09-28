@@ -1,44 +1,50 @@
 <template>
   <div>
-    <div id="nav">
-      <div id="logout-btn" @click="logout">Logout</div>
-    </div>
-    <div id="title">
-      <h2><u>ROCK PAPER SCISSORS LIZARD SPOCK</u></h2>
-      <p>
-        <i>
-          <u>qeylIS mInDu'</u> <br />
-          (definition: game time in Klingon language)
-        </i>
-      </p>
-    </div>
-    <scoreboard-component />
-    <div id="choices">
-      <button @click="select(0)">Rock</button>
-      <button @click="select(1)">Paper</button>
-      <button @click="select(2)">Scissors</button>
-      <button @click="select(3)">Lizard</button>
-      <button @click="select(4)">Spock</button>
-    </div>
-    <div id="players">
-      <player-component />
-      <div id="game-rules">
-        <h2><u>Rules of the Game:</u></h2>
-        <p>Click a button to play!</p>
-        <ul>
-          <li>Scissors cuts Paper</li>
-          <li>Paper covers Rock</li>
-          <li>Rock crushes Lizard</li>
-          <li>Lizard poisons Spock</li>
-          <li>Spock smashes Scissors</li>
-          <li>Scissors decapitates Lizard</li>
-          <li>Lizard eats Paper</li>
-          <li>Paper disproves Spock</li>
-          <li>Spock vaporizes Rock</li>
-          <li>Rock crushes Scissors</li>
-        </ul>
+    <div v-if="token != undefined">
+      <div id="nav">
+        <div id="logout-btn" @click="logout">Logout</div>
       </div>
-      <computer-component />
+      <div id="title">
+        <h2><u>ROCK PAPER SCISSORS LIZARD SPOCK</u></h2>
+        <p>
+          <i>
+            <u>qeylIS mInDu'</u> <br />
+            (definition: game time in Klingon language)
+          </i>
+        </p>
+      </div>
+      <scoreboard-component />
+      <div id="choices">
+        <button @click="select(0)">Rock</button>
+        <button @click="select(1)">Paper</button>
+        <button @click="select(2)">Scissors</button>
+        <button @click="select(3)">Lizard</button>
+        <button @click="select(4)">Spock</button>
+      </div>
+      <div id="players">
+        <player-component />
+        <div id="game-rules">
+          <h2><u>Rules of the Game:</u></h2>
+          <p>Click a button to play!</p>
+          <ul>
+            <li>Scissors cuts Paper</li>
+            <li>Paper covers Rock</li>
+            <li>Rock crushes Lizard</li>
+            <li>Lizard poisons Spock</li>
+            <li>Spock smashes Scissors</li>
+            <li>Scissors decapitates Lizard</li>
+            <li>Lizard eats Paper</li>
+            <li>Paper disproves Spock</li>
+            <li>Spock vaporizes Rock</li>
+            <li>Rock crushes Scissors</li>
+          </ul>
+        </div>
+        <computer-component />
+      </div>
+    </div>
+    <div v-else>
+      <h2>No user logged in. Please return to Login page.</h2>
+      <router-link to="/">Return to Login</router-link>
     </div>
   </div>
 </template>
@@ -119,7 +125,8 @@ export default {
           Lizard: -1,
           Spock: 0
         }
-      }
+      },
+      token: cookies.get("token")
     };
   },
   methods: {
@@ -156,6 +163,12 @@ export default {
   width: 10%;
   margin-left: 43.5%;
   cursor: pointer;
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+#logout-btn:hover {
+  transform: scale(0.9);
 }
 #players {
   display: grid;
@@ -180,13 +193,19 @@ button {
   background-color: rgb(114, 27, 27);
   color: white;
   padding: 7px;
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 7%;
   width: 25%;
   cursor: pointer;
   box-shadow: 2px 0px 5px rgb(56, 56, 56);
   font-family: "Bangers", cursive;
   letter-spacing: 3px;
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+button:hover {
+  transform: scale(0.9);
 }
 #game-rules {
   display: grid;

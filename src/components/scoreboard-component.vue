@@ -29,8 +29,8 @@ export default {
   align-items: left;
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 30%;
-  margin-left: 35%;
+  width: 40%;
+  margin-left: 30%;
   margin-top: 3vh;
   margin-bottom: 3vh;
   color: black;

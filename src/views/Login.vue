@@ -1,8 +1,9 @@
 <template>
   <div class="login">
-    <h1>Login</h1>
+    <h1 id="title">ROCK PAPER SCISSORS LIZARD SPOCK</h1>
     <form id="login-form" action="javascript:void(0)">
       <img src="../assets/rpslr.png" alt="Rock Paper Scissors Lizard Spock" />
+      <h4><u>LOGIN</u></h4>
       <p>Username</p>
       <input type="text" v-model="username" />
       <br />
@@ -62,6 +63,10 @@ export default {
 </script>
 
 <style scoped>
+#title {
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
+}
 #button {
   margin: 2vw;
   background-color: rgb(114, 27, 27);
@@ -70,6 +75,13 @@ export default {
   font-weight: bold;
   font-size: 14px;
   border-radius: 7%;
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  cursor: pointer;
+}
+#button:hover {
+  transform: scale(0.9);
 }
 input {
   margin: 5px, 0px, 5px, 0px;
