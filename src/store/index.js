@@ -1,21 +1,32 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import LoginToken from "vue-cookies";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    token: ""
+    userSelection: {},
+    computerSelection: {},
+    wins: 0,
+    draws: 0,
+    losses: 0
   },
+
   mutations: {
-    onlogin: function(state, data) {
-      state.token = data;
-      LoginToken.set("token", state.token);
+    updateUser: function(state, userSelect) {
+      state.userSelection = userSelect;
     },
-    loginError: function(state) {
-      state.loginState = true;
-      state.status = "Login Error";
+    updateComputer: function(state, computerSelect) {
+      state.computerSelection = computerSelect;
+    },
+    updateResults: function(state, results) {
+      if (results == 1) {
+        state.wins++;
+      } else if (results == 0) {
+        state.draws++;
+      } else if (results == -1) {
+        state.losses++;
+      }
     }
   },
   actions: {},
