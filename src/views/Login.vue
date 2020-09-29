@@ -1,8 +1,14 @@
 <template>
   <div class="login">
-    <h1 id="title">ROCK PAPER SCISSORS LIZARD SPOCK</h1>
+    <h1 id="title" class="animate__animated animate__lightSpeedInRight">
+      ROCK PAPER SCISSORS LIZARD SPOCK
+    </h1>
     <form id="login-form" action="javascript:void(0)">
-      <img src="../assets/rpslr.png" alt="Rock Paper Scissors Lizard Spock" />
+      <img
+        src="../assets/rpslr.png"
+        alt="Rock Paper Scissors Lizard Spock"
+        class="animate__animated animate__lightSpeedInLeft"
+      />
       <h4><u>LOGIN</u></h4>
       <p>Username</p>
       <input type="text" v-model="username" />
@@ -63,9 +69,14 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+
 #title {
   font-family: "Press Start 2P", cursive;
   font-size: 20px;
+  word-spacing: 3px;
+  text-align: center;
+  margin-top: 5vw;
 }
 #button {
   margin: 2vw;

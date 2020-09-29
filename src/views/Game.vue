@@ -5,13 +5,15 @@
         <div id="logout-btn" @click="logout">Logout</div>
       </div>
       <div id="title">
-        <h2><u>ROCK PAPER SCISSORS LIZARD SPOCK</u></h2>
-        <p>
+        <h2 class="animate__animated animate__fadeIn">
+          <u>ROCK PAPER SCISSORS LIZARD SPOCK</u>
+        </h2>
+        <!-- <p>
           <i>
             <u>qeylIS mInDu'</u> <br />
             (definition: game time in Klingon language)
           </i>
-        </p>
+        </p> -->
       </div>
       <scoreboard-component />
       <div id="choices">
@@ -94,29 +96,29 @@ export default {
           Rock: 0,
           Paper: -1,
           Scissors: 1,
-          Lizard: -1,
-          Spock: 1
+          Lizard: 1,
+          Spock: -1
         },
         Paper: {
           Rock: 1,
           Paper: 0,
           Scissors: -1,
-          Lizard: 1,
-          Spock: -1
+          Lizard: -1,
+          Spock: 1
         },
         Scissors: {
           Rock: -1,
           Paper: 1,
           Scissors: 0,
-          Lizard: -1,
-          Spock: 1
+          Lizard: 1,
+          Spock: -1
         },
         Lizard: {
           Rock: -1,
           Paper: 1,
           Scissors: -1,
           Lizard: 0,
-          Spock: -1
+          Spock: 1
         },
         Spock: {
           Rock: 1,
@@ -148,15 +150,17 @@ export default {
 };
 </script>
 <style scoped>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+
 #title {
-  margin-bottom: 3vw;
+  margin-bottom: 5vw;
   font-family: "Press Start 2P", cursive;
   line-height: 3vh;
 }
 #logout-btn {
-  background-color: rgb(114, 27, 27);
   box-shadow: 2px 0px 5px rgb(56, 56, 56);
-  color: white;
+  border: 1px solid rgb(114, 27, 27);
+  color: rgb(114, 27, 27);
   padding: 5px;
   font-weight: bold;
   border-radius: 7%;
@@ -176,7 +180,7 @@ export default {
   text-align: center;
   justify-items: center;
   object-fit: cover;
-  margin-top: 5vw;
+  margin-top: 1vw;
   margin-left: 2vw;
   margin-right: 2vw;
   margin-bottom: 7vw;
