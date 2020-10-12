@@ -62,23 +62,24 @@ export default {
       gameElement: [
         {
           name: "Rock",
-          image: "../assets/rock.png"
+          image: "http://clipart-library.com/image_gallery/n757023.png"
         },
         {
           name: "Paper",
-          image: "../assets/paper.png"
+          image: "http://clipart-library.com/data_images/423876.jpg"
         },
         {
           name: "Scissors",
-          image: "../assets/scissors.png"
+          image: "http://www.pngmart.com/files/1/Scissors-PNG-File.png"
         },
         {
           name: "Lizard",
-          image: "../assets/lizard.png"
+          image: "http://clipart-library.com/data_images/247605.png"
         },
         {
           name: "Spock",
-          image: "../assets/spock.png"
+          image:
+            "https://www.pikpng.com/pngl/b/136-1365149_spock-png-spock-greeting-clipart.png"
         }
       ],
       gameRules: {
