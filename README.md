@@ -13,7 +13,8 @@ Paper disproves Spock<br>
 Spock vaporizes Rock<br>
 Rock crushes Scissors<br>
 
-![Screenshots of the application](https://imgur.com/a/7rsprgG)(https://imgur.com/oMpDlO8)
+![Screenshot of login page](https://imgur.com/a/7rsprgG)
+![Screenshot of game page](https://imgur.com/oMpDlO8)
 
 ## Project setup
 ```
