@@ -8,12 +8,6 @@
         <h2 class="animate__animated animate__fadeIn">
           <u>ROCK PAPER SCISSORS LIZARD SPOCK</u>
         </h2>
-        <!-- <p>
-          <i>
-            <u>qeylIS mInDu'</u> <br />
-            (definition: game time in Klingon language)
-          </i>
-        </p> -->
       </div>
       <scoreboard-component />
       <div id="choices">
@@ -68,24 +62,23 @@ export default {
       gameElement: [
         {
           name: "Rock",
-          image: "http://clipart-library.com/image_gallery/n757023.png"
+          image: "../assets/rock.png"
         },
         {
           name: "Paper",
-          image: "http://clipart-library.com/data_images/423876.jpg"
+          image: "../assets/paper.png"
         },
         {
           name: "Scissors",
-          image: "http://www.pngmart.com/files/1/Scissors-PNG-File.png"
+          image: "../assets/scissors.png"
         },
         {
           name: "Lizard",
-          image: "http://clipart-library.com/data_images/247605.png"
+          image: "../assets/lizard.png"
         },
         {
           name: "Spock",
-          image:
-            "https://www.pikpng.com/pngl/b/136-1365149_spock-png-spock-greeting-clipart.png"
+          image: "../assets/spock.png"
         }
       ],
       gameRules: {
