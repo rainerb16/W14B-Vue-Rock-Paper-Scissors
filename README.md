@@ -2,18 +2,18 @@
 ###### This is an assignment for InnoTech College. Demonstrating skills with Vue.js, Vue X and Router. Rock Paper Scissors Spock Lizard is the geek version of the original hand game.
 
 #### RULES
-Scissors cuts Paper
-Paper covers Rock
-Rock crushes Lizard
-Lizard poisons Spock
-Spock smashes Scissors
-Scissors decapitates Lizard
-Lizard eats Paper
-Paper disproves Spock
-Spock vaporizes Rock
-Rock crushes Scissors
+Scissors cuts Paper<br>
+Paper covers Rock<br>
+Rock crushes Lizard<br>
+Lizard poisons Spock<br>
+Spock smashes Scissors<br>
+Scissors decapitates Lizard<br>
+Lizard eats Paper<br>
+Paper disproves Spock<br>
+Spock vaporizes Rock<br>
+Rock crushes Scissors<br>
 
-![Screenshots of the application] (https://imgur.com/a/7rsprgG) (https://imgur.com/oMpDlO8)
+![Screenshots of the application](https://imgur.com/a/7rsprgG)(https://imgur.com/oMpDlO8)
 
 ## Project setup
 ```
