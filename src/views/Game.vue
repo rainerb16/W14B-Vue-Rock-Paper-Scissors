@@ -68,13 +68,11 @@ export default {
       gameElement: [
         {
           name: "Rock",
-          image:
-            "https://png2.cleanpng.com/sh/835f311bdf17803ff242e75975ffb8e7/L0KzQYm3U8I5N6tmiZH0aYP2gLBuTgJwa5wyetHAbHTogn7rhgZqaZ95eeR9LYP3f7Bsk71idpUyitHsa4OwRbLpgscyPJJmfacEOEKxSYW7UsQyQWI2TaQ7MkO2Roi7V8E1Ol91htk=/kisspng-rock-boulder-deviantart-stones-and-rocks-5abb714aae5982.9442419115222336747142.png"
+          image: "http://clipart-library.com/image_gallery/n757023.png"
         },
         {
           name: "Paper",
-          image:
-            "https://png2.cleanpng.com/sh/fd8365c2440028ba4ae153dc5840bd80/L0KzQYm3VcI5N6p8R91yc4Pzfri0lf5qfKQyh9g2cHHzdcO0kgVidqVujOs2c4TkfrXokvQueJJ1feQ2c3n9dX73kvlvfJoyiAZqY3uwf7e0kPFxbaMyTdQ5Y0SzRLLrVvY6O2EzTag7MEK5RIS4VcI4PWMATaYBOEizRXB3jvc=/kisspng-units-of-paper-quantity-standard-paper-size-printi-stack-of-paper-5b0c404ad6f930.5620264315275295468805.png"
+          image: "http://clipart-library.com/data_images/423876.jpg"
         },
         {
           name: "Scissors",
@@ -82,8 +80,7 @@ export default {
         },
         {
           name: "Lizard",
-          image:
-            "https://png2.cleanpng.com/sh/155e316bea2b7c4add86bfbb7ae15f99/L0KzQYm3UcMyN5t8iZH0aYP2gLBuTfdzbZZzRdtwdXHxcX7zigpiepUyitd5dHnvdX7whCVidpIyiNDwLXnwcbjsTcViP2JmUKk6Mkm5c7K5TsI4OWE5UKg8MUW0R4SCWMEzQWI7Uak3cH7q/kisspng-green-iguana-lizard-reptile-iguana-png-image-5a71a871296ca2.2710486315173981291697.png"
+          image: "http://clipart-library.com/data_images/247605.png"
         },
         {
           name: "Spock",
