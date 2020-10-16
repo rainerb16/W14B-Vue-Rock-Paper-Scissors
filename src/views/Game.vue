@@ -62,11 +62,11 @@ export default {
       gameElement: [
         {
           name: "Rock",
-          image: "http://clipart-library.com/image_gallery/n757023.png"
+          image: "https://www.pngitem.com/pimgs/m/125-1254468_rubble-png-transparent-background-igneous-rock-png-png.png"
         },
         {
           name: "Paper",
-          image: "http://clipart-library.com/data_images/423876.jpg"
+          image: "https://www.kindpng.com/picc/m/8-81766_vector-notebook-png-download-paper-notepad-transparent-png.png"
         },
         {
           name: "Scissors",
@@ -74,7 +74,7 @@ export default {
         },
         {
           name: "Lizard",
-          image: "http://clipart-library.com/data_images/247605.png"
+          image: "https://www.clipartkey.com/mpngs/m/186-1864264_transparent-background-lizard-png.png"
         },
         {
           name: "Spock",
